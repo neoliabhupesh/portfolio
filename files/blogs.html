@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Blogs</title>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		body{background-color: #5499c7;}
+		header{position: fixed; width: 100%	}
+		.blog_intro{background-color: #154360; padding: 20px;}
+		.logo #mylogo{color: #fff; font-size: 50px}
+		#blog_intro_name{text-align: center; font-size: 40px;}
+		.blog_menu{background-color: #1a5276; padding: 10px 0px;}
+		.blog_menu a{padding: 5px 10px;  border-radius: 3px; color: #fff;}
+		.blog_menu a:first-child{margin-left: 5px;}
+		.blog_menu a:hover{text-decoration: underline;}
+		#myweb{text-align: center;}
+		#myweb a{color:  #d6eaf8;}
+		#myweb a:hover{text-decoration: underline; color: #d35400;}
+		aside{width: 25%; height: 900px; float: left; margin-top: 152px; position: fixed;}
+		.sidecontent{padding: 10px}
+		main{width: 75%; float: right; margin-top: 152px; background-color:  #a9cce3; padding-bottom: 20px;}
+		.main_content{padding: 20px 0px 0px 20px;}
+		footer{text-align: center; padding: 20px; background-color: #154360;}
+		.sidecontent h4{ text-align: center; font-size: 20px; margin-bottom: 10px;}
+		.sidecontent p a{ color: #fff;}
+	</style>
+</head>
+<body>
+	<div class="blog_container">
+		<header>
+			<div class="blog_intro">
+				<div class="logo left">
+					<span id="mylogo">b<span style="color: #eb984e; text-decoration: underline;">N</span></span>
+					<br>
+					<span id="id-head-tag">My Portfolio</span>
+				</div>
+				<div class="main_head">
+					<h3 id="blog_intro_name">Welcome to My blog</h3>
+					<p id="myweb"><a href="neowebcrafter.com">neowebcrafter.com</a></p>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<nav class="blog_menu">
+				<a href="blogs.html#task_acc">Accordion </a>/
+				<a href="blogs.html#task_coll">Collapsible </a>/
+				<a href="blogs.html#task_dr">DropDown</a>/
+				<a href="interview_ques.html">Interview Question</a>/
+			</nav>
+		</header>
+		<aside>
+			<div class="sidecontent">
+				<h4>Jquery Plugins</h4>
+	  			<p >How to use Jquery Plugins</p>
+	  			<p><a href="">Owl Carousel</a></p>
+	  			<p>Owl Carousel</p>
+	  			<p>Owl Carousel</p>
+	  			<p>Owl Carousel</p>
+	  			<p>Owl Carousel</p>
+	  			<p>Owl Carousel</p>
+			</div>
+		</aside>
+		<main>
+			<div class="main_content">
+				<div id="task_acc">
+				<p class="task_name">Accordion</p>
+				<div class="task_accordion">
+					<div class="accrdn">
+						<a href="" class="topic_name">Topic first<span class="caret_down"></span></a>
+						<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.</p>
+					</div>
+					<div class="accrdn">
+						<a href="" class="topic_name">Topic second<span class="caret_down"></span></a>
+						<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.</p>
+					</div>
+					<div class="accrdn">
+						<a href="" class="topic_name">Topic third<span class="caret_down"></span></a>
+						<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.</p>
+					</div>
+					<div class="accrdn">
+						<a href="" class="topic_name">Topic Fourth<span class="caret_down"></span></a>
+						<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.</p>
+					</div>
+				</div>
+ 				<h3 class="concept">Mark Up</h3>
+				<div class="code">
+					<code>
+					<pre>&lt;div class="task_accordion"><br> &lt;div class="accrdn"><br>   &lt;a href="" class="topic_name">Topic first&lt;span class="caret_down">&lt;/span>&lt;/a><br>   &lt;p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br>   sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.&lt;/p><br> &lt;/div><br> &lt;div class="accrdn"><br>   &lt;a href="" class="topic_name">Topic second&lt;span class="caret_down">&lt;/span>&lt;/a><br>   &lt;p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br>   sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.&lt;/p><br> &lt;/div><br> &lt;div class="accrdn"><br>   &lt;a href="" class="topic_name">Topic third&lt;span class="caret_down">&lt;/span>&lt;/a><br>   &lt;p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br>   sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.&lt;/p><br> &lt;/div><br> &lt;div class="accrdn"><br>   &lt;a href="" class="topic_name">Topic Fourth&lt;span class="caret_down">&lt;/span>&lt;/a><br>   &lt;p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br>   sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.&lt;/p><br> &lt;/div><br>&lt;/div> </pre>
+					</code>
+				</div>
+				<h3 class="concept">JQuery Concept used: </h3>
+				<div class="code"> 
+					<code>
+						<pre>$(".task_accordion .accrdn a").cack(function (e) {<br> e.preventDefadivt();<br> if($(this).next().is(":hidden")){<br>  $(".task_accordion .accrdn p").sadeUp(); <br>  $(this).next('.content').sadeDown(); <br> }<br>}) </pre>
+		    		</code>
+		    	</div>
+			<div id="task_coll">
+				<p class="task_name">Collapsible</p>
+				<div class="task_collapsible">
+					<div class="collapse">
+						<a href="" class="topic_name">Topic first<span class="caret_down"></span></a>
+						<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.</p>
+					</div>
+					<div class="collapse">
+						<a href="" class="topic_name">Topic second<span class="caret_down"></span></a>
+						<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.</p>
+					</div>
+					<div class="collapse">
+						<a href="" class="topic_name">Topic third<span class="caret_down"></span></a>
+						<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.</p>
+					</div>
+					<div class="collapse">
+						<a href="" class="topic_name">Topic Fourth<span class="caret_down"></span></a>
+						<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.</p>
+					</div>
+				</div>
+			</div>
+			<h3 class="concept">Mark Up</h3>
+				<div class="code">
+					<code>
+						<pre>&lt;div class="task_collapsible"><br> &lt;div class="collapse"><br>   &lt;a href="" class="topic_name">Topic first&lt;span class="caret_down">&lt;/span>&lt;/a><br>   &lt;p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br>   sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.&lt;/p><br> &lt;/div><br> &lt;div class="collapse"><br>   &lt;a href="" class="topic_name">Topic second&lt;span class="caret_down">&lt;/span>&lt;/a><br>   &lt;p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br>   sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.&lt;/p><br> &lt;/div><br> &lt;div class="collapse"><br>   &lt;a href="" class="topic_name">Topic third&lt;span class="caret_down">&lt;/span>&lt;/a><br>   &lt;p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br>   sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.&lt;/p><br> &lt;/div><br> &lt;div class="collapse"><br>   &lt;a href="" class="topic_name">Topic Fourth&lt;span class="caret_down">&lt;/span>&lt;/a><br>   &lt;p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing eat,<br>   sed do eiusmod tempor incididunt ut labore et dolore magna aaqua.&lt;/p><br> &lt;/div><br>&lt;/div></pre>
+					</code>
+				</div>
+			<h3 class="concept">JQuery Concept used: </h3>
+			<div class="code"> 
+				<code>
+					<pre>$(".task_collapsible .collapse a").cack(function (e) {<br> e.preventDefadivt();<br> $(this).next().sadeToggle();{<br>  var x = $(this).find("span"); <br>  if (x.hasClass('caret_down')) { <br>   x.removeClass('caret_down').addClass('caret_up');<br>  }else{<br>   x.removeClass('caret_up').addClass('caret_down');<br>  }<br>})<br></pre>
+	    		</code>
+	    	</div>
+			<div id="task_dr">
+			<p class="task_name" id="jump_to_Dropdown">Dropdown</p>
+			<p>Get information about famous cities acc. to states:</p>
+			<br>
+			<div class="nav">
+				<ul>
+					<li><a href="">Uttarakhand</a>
+						<ul>
+							<li><a href="">Dehradun</a></li>
+							<li><a href="">Rishikesh</a></li>
+							<li><a href="">Nainital</a></li>
+							<li><a href="">Haridwar</a></li>
+						</ul>
+					</li>
+					<li><a href="">Maharashtra</a>
+						<ul>
+							<li><a href="">Mumbai</a></li>
+							<li><a href="">Pune</a></li>
+							<li><a href="">Nagpur</a></li>
+							<li><a href="">Nasik</a></li>
+						</ul>
+					</li>
+					<li><a href="">Karnataka</a></li>
+					<li><a href="">Rajasthan</a>
+						<ul>
+							<li><a href="">Jaipur</a></li>
+							<li><a href="">Udaipur</a></li>
+							<li><a href="">Bikaner</a></li>
+							<li><a href="">Jodhpur</a></li>
+							<li><a href="">Jaisalmer</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</main>
+		<div class="clear"></div>
+		<footer>
+			<span>blog by bhupesh_neolia</span>
+		</footer>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/myscript.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('html, body').scrollTop(0).show();
+        $('html, body').animate({
+        	scrollTop: $(window.location.hash).offset().top - 152
+           }, 1000);
+    });
+    $(".blog_menu a").click(function (e) {
+    	// e.preventDefault();
+    	var temp = $(this).attr("href").split("#");
+    	$("html, body").animate({scrollTop: $("#" + temp[1]).offset().top -152}, 1000);
+    })
+</script>
+</body>
+</html>
